@@ -1,3 +1,13 @@
-main > .container-fluid {
-  padding: 60px 15px 0;
+:root {
+  --icon-fg: #919191;
+  --frame-bg: #ededed;
+  --white: #ffffff;
+}
+
+[class^="col"] {
+  background-color: var(--frame-bg);
+}
+
+.material-icons {
+  color: var(--icon-fg);
 }
