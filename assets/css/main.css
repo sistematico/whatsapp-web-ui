@@ -1,13 +1,55 @@
+@import url('material-icons.css');
+
 :root {
+  --body-bg: #090E11;
+  --chat-bg: #0d1418;
+  --side-bg: #131C21;
   --icon-fg: #919191;
-  --frame-bg: #ededed;
-  --white: #ffffff;
+  --frame-bg: #2A2F32;
+  --text-fg: #D4D5D7;
 }
 
-[class^="col"] {
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+[class^='container'] {
+  color: var(--text-fg);
+  background: var(--body-bg) url('../img/bg-chat-tile-dark.png');
+}
+
+.inputchat,
+[class^='col'] {
   background-color: var(--frame-bg);
+}
+
+.sidebar {
+  background-color: var(--side-bg);
+}
+
+.avatar {
+  width: 40px;
 }
 
 .material-icons {
   color: var(--icon-fg);
+}
+
+.chat {
+  background-color: rgba(13,20,24,.9);
+}
+
+.search::after {
+  /* font-family: 'Material Icons'; */
+  /* content: "\e8b6"; */
+  /* content: '&#8595'; */
+  /* border-color: #198754; */
+  color: #198754;
+  /* padding-right: calc(1.5em + .75rem); */
+  /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e"); */
+  /* background-repeat: no-repeat; */
+  /* background-position: left calc(.375em + .1875rem) center; */
+  /* background-size: calc(.75em + .375rem) calc(.75em + .375rem); */
 }
